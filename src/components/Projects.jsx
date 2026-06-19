@@ -14,13 +14,13 @@ const projects = [
   },
   {
     name: 'Billiard Management System', badge: 'OJT Project',
-    desc: 'A comprehensive billiard hall operations system handling multiple table types (regular, VIP, KTV, Kubo rentals), real-time game session tracking with global timeout alarms, reservation scheduling, void management with audit trails, and Excel report generation for transactions and dead time analysis.',
+    desc: 'A standalone operations system designed for billiard businesses. It handles multiple table types (regular, VIP, KTV, Kubo rentals) and features real-time game session tracking with global timeout alarms. It includes reservation scheduling, void management with audit trails, and highly accurate Excel report generation for daily transactions and dead time analysis.',
     stack: ['PHP','MySQL','JavaScript','XAMPP'],
     src: 'https://github.com/Juicewaaa4/Billiard-Management-System',
   },
   {
     name: "Zoey's Eatery POS", badge: 'OJT Project',
-    desc: 'Offline-first desktop POS and inventory management app built with C# WinForms on .NET 8. Supports multi-PC LAN synchronization for concurrent admin and cashier operations, role-based access control, automated stock deductions with low-stock alerts, and Excel/PDF report exports.',
+    desc: 'An offline-first, standalone desktop POS and inventory management application built for eateries. Supports multi-PC LAN synchronization for concurrent admin and cashier operations, automated stock deductions with low-stock alerts, and highly accurate, comprehensive reporting via Excel and PDF exports.',
     stack: ['C#','.NET 8','WinForms','SQLite'],
     src: 'https://github.com/Juicewaaa4/Zoey-s-Eatery-POS',
   },

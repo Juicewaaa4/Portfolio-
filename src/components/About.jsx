@@ -44,8 +44,11 @@ export default function About() {
         <FadeIn delay={0.2}>
           <div className="flex border border-border rounded-lg divide-x divide-border bg-surface">
             <AnimatedNum value="6" label="Shipped Projects" />
-            <AnimatedNum value="BSIS" label="Degree" />
             <AnimatedNum value="2026" label="Graduating" />
+            <div className="flex-1 text-center py-6">
+              <div className="text-xl font-bold text-accent mb-1 font-mono leading-tight flex items-center justify-center h-[32px]">B.S. in Info Systems</div>
+              <div className="text-[11px] text-text-muted uppercase tracking-widest font-mono">Degree</div>
+            </div>
             <AnimatedNum value="Full-Stack" label="Focus Area" />
           </div>
         </FadeIn>
