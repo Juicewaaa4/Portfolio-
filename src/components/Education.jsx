@@ -12,17 +12,21 @@ export default function Education() {
           <FadeIn delay={0.1}>
             <div className="relative">
               <span className="absolute -left-[23px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent" />
-              <h3 className="text-base font-semibold mb-0.5">Bachelor of Science in Information Systems</h3>
+              <h3 className="text-lg font-semibold text-text mb-1">
+                Bachelor of Science in Information Systems
+              </h3>
               <p className="text-text-secondary text-sm">Richwell Colleges</p>
-              <p className="font-mono text-xs text-text-muted mt-0.5">Expected Graduation: August 2026</p>
+              <p className="font-mono text-xs text-text-muted mt-1">Expected Graduation: August 2026</p>
             </div>
           </FadeIn>
           <FadeIn delay={0.2}>
             <div className="relative">
               <span className="absolute -left-[23px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent" />
-              <h3 className="text-base font-semibold mb-0.5">Senior High School</h3>
+              <h3 className="text-lg font-semibold text-text mb-1">
+                Senior High School
+              </h3>
               <p className="text-text-secondary text-sm">Dampol 2nd National Highschool</p>
-              <p className="font-mono text-xs text-text-muted mt-0.5">2021 – 2022</p>
+              <p className="font-mono text-xs text-text-muted mt-1">2021 – 2022</p>
             </div>
           </FadeIn>
         </div>
