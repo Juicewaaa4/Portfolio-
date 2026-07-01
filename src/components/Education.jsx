@@ -16,7 +16,7 @@ export default function Education() {
                 Bachelor of Science in Information Systems
               </h3>
               <p className="text-text-secondary text-sm">Richwell Colleges</p>
-              <p className="font-mono text-xs text-text-muted mt-1">Expected Graduation: August 2026</p>
+              <p className="font-mono text-xs text-text-muted mt-1">Class of 2026</p>
             </div>
           </FadeIn>
           <FadeIn delay={0.2}>

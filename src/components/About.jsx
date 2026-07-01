@@ -42,13 +42,9 @@ export default function About() {
           </div>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <div className="grid grid-cols-2 md:grid-cols-4 bg-surface border border-border rounded-lg divide-y md:divide-y-0 md:divide-x divide-border">
-            <div className="border-r border-border md:border-r-0"><AnimatedNum value="6" label="Shipped Projects" /></div>
-            <div><AnimatedNum value="2026" label="Graduating" /></div>
-            <div className="flex-1 text-center py-6 border-r border-border md:border-r-0">
-              <div className="text-xl md:text-xl font-bold text-accent mb-1 font-mono leading-tight flex items-center justify-center h-[32px] px-2 text-center text-[15px] sm:text-base">B.S. in Info Systems</div>
-              <div className="text-[10px] md:text-[11px] text-text-muted uppercase tracking-widest font-mono">Degree</div>
-            </div>
+          <div className="grid grid-cols-3 bg-surface border border-border rounded-lg divide-x divide-border">
+            <div><AnimatedNum value="6" label="Shipped Projects" /></div>
+            <div><AnimatedNum value="BSIS" label="Degree" /></div>
             <div><AnimatedNum value="Full-Stack" label="Focus Area" /></div>
           </div>
         </FadeIn>

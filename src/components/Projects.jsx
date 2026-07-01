@@ -10,7 +10,8 @@ const projects = [
       'Real-time predictions served from optimized lookup tables — no model inference at request time',
     ],
     stack: ['React','FastAPI','Flutter','Prophet','XGBoost'],
-    src: '#', demo: '#',
+    src: 'https://github.com/leizydog/taskroute-tracker',
+    demo: 'https://www.youtube.com/watch?v=pgnEPNRVDD0',
   },
   {
     name: 'Billiard Management System', badge: 'OJT Project',
@@ -33,12 +34,12 @@ const projects = [
   {
     name: 'BeReady', badge: 'Web Application',
     desc: 'A disaster readiness app built during a university course on emergency preparedness. Uses Django with AI integration to generate context-specific safety guidelines — the focus was making complex safety protocols accessible to non-technical users under stress.',
-    stack: ['Django','AI Integration'], src: '#',
+    stack: ['Django','AI Integration'],
   },
   {
     name: 'Richwell Portal', badge: 'Web Application',
     desc: 'Student information system where registrars, cashiers, deans, and students each see role-specific dashboards. Led the frontend in React 19 with Vite, designed four distinct dashboard layouts in Tailwind, and managed the codebase through feature branches.',
-    stack: ['React 19','Vite','Tailwind'], src: '#',
+    stack: ['React 19','Vite','Tailwind'],
   },
 ]
 
