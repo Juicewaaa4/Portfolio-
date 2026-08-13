@@ -22,7 +22,7 @@ export function Contact() {
             {[
               { icon: <MailIcon />, href: 'mailto:delaralloydjoshua4@gmail.com', label: 'Email' },
               { icon: <GithubIcon />, href: 'https://github.com/Juicewaaa4', label: 'GitHub' },
-              { icon: <PhoneIcon />, href: 'tel:09478173485', label: 'Phone' },
+              { icon: <PhoneIcon />, href: 'tel:+639478173485', label: 'Phone' },
               { icon: <MapIcon />, href: 'https://www.google.com/maps/search/Pulilan,+Bulacan,+Philippines', label: 'Location' },
             ].map(c => (
               <a key={c.label} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined}
