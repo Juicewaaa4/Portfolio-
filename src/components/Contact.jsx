@@ -20,10 +20,10 @@ export function Contact() {
         <FadeIn delay={0.1}>
           <div className="flex justify-center gap-5 mb-8">
             {[
-              { icon: <MailIcon />, href: 'mailto:delarralloydjoshua4@gmail.com', label: 'Email' },
+              { icon: <MailIcon />, href: 'mailto:delaralloydjoshua4@gmail.com', label: 'Email' },
               { icon: <GithubIcon />, href: 'https://github.com/Juicewaaa4', label: 'GitHub' },
               { icon: <PhoneIcon />, href: 'tel:09478173485', label: 'Phone' },
-              { icon: <MapIcon />, href: '#', label: 'Location' },
+              { icon: <MapIcon />, href: 'https://www.google.com/maps/search/Pulilan,+Bulacan,+Philippines', label: 'Location' },
             ].map(c => (
               <a key={c.label} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined}
                 rel="noopener noreferrer" title={c.label}
@@ -34,7 +34,7 @@ export function Contact() {
           </div>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <a href="mailto:delarralloydjoshua4@gmail.com"
+          <a href="mailto:delaralloydjoshua4@gmail.com"
             className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white text-sm font-mono font-semibold rounded-lg hover:bg-accent-light transition-colors">
             Send an email
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round"/></svg>
