@@ -25,9 +25,7 @@ export default function Navbar() {
       scrolled ? 'bg-base/80 backdrop-blur-xl border-border' : 'bg-transparent border-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-5 flex items-center justify-between h-14">
-        <a href="#hero" className="font-semibold text-text text-sm tracking-tight">
-          ljd<span className="text-accent">.</span>
-        </a>
+        <div />
         <div className="hidden md:flex items-center gap-6">
           {links.map(l => (
             <a key={l} href={`#${l}`}

@@ -1,13 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FadeIn } from './shared'
-
-const code = `{
-  "name": "Lloyd Joshua A. De Lara",
-  "role": "Full-Stack Developer",
-  "location": "Pulilan, Bulacan, PH",
-  "available": true,
-  "stack": ["React", "Django", "FastAPI", "Flutter"]
-}`
+import profileImg from '../assets/profile-original.jpg'
 
 function TypingText({ text }) {
   const [displayed, setDisplayed] = useState('')
@@ -22,28 +15,19 @@ function TypingText({ text }) {
   return <>{displayed}<span className="typing-cursor" /></>
 }
 
-function SyntaxHighlight({ code }) {
-  const highlighted = code
-    .replace(/"(\w+)":/g, '<span class="text-blue-300">"$1"</span>:')
-    .replace(/: "(.*?)"/g, ': <span class="text-green-300">"$1"</span>')
-    .replace(/true/g, '<span class="text-purple-400">true</span>')
-    .replace(/\[/g, '<span class="text-gray-400">[</span>')
-    .replace(/\]/g, '<span class="text-gray-400">]</span>')
-    .replace(/[{}]/g, '<span class="text-gray-500">$&</span>')
-  return <pre className="text-gray-300 text-xs leading-7" dangerouslySetInnerHTML={{ __html: highlighted }} />
-}
-
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-14">
       <div className="hero-bg" />
-      <div className="max-w-6xl mx-auto px-5 w-full grid lg:grid-cols-[3fr_2fr] gap-10 items-center relative z-10">
+      <div className="max-w-6xl mx-auto px-5 w-full grid lg:grid-cols-[3fr_2fr] gap-12 items-center relative z-10">
+
+        {/* Left — Text Content */}
         <div>
           <FadeIn>
             <div className="flex items-center gap-3 mb-6">
               <div className="avatar-ring">
-                <div className="w-12 h-12 rounded-full bg-elevated flex items-center justify-center">
-                  <span className="font-mono text-accent text-sm font-bold">LJD</span>
+                <div className="w-12 h-12 rounded-full bg-elevated flex items-center justify-center overflow-hidden">
+                  <img src={profileImg} alt="Lloyd Joshua De Lara" className="w-full h-full object-cover object-top scale-150 translate-y-1" />
                 </div>
               </div>
               <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-green/20 bg-green/5">
@@ -84,19 +68,47 @@ export default function Hero() {
             </div>
           </FadeIn>
         </div>
-        <FadeIn delay={0.3} className="hidden lg:block">
-          <div className="terminal-glow rounded-lg overflow-hidden bg-surface transition-all duration-300">
-            <div className="flex items-center gap-1.5 px-4 py-2.5 bg-elevated border-b border-border">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
-              <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
-              <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
-              <span className="ml-2 text-text-muted font-mono text-[11px]">profile.json</span>
+
+        {/* Right — Profile Photo Card */}
+        <FadeIn delay={0.3} className="hidden lg:flex justify-center items-center">
+          <div className="profile-card-wrap">
+            {/* Glow behind card */}
+            <div className="absolute inset-0 rounded-2xl bg-accent/20 blur-2xl scale-95 -z-10" />
+
+            {/* Card */}
+            <div className="relative rounded-2xl overflow-hidden border border-border-strong"
+              style={{ boxShadow: '0 0 0 1px rgba(99,102,241,0.15), 0 24px 64px rgba(0,0,0,0.6)' }}>
+
+              {/* Photo */}
+              <img
+                src={profileImg}
+                alt="Lloyd Joshua De Lara"
+                className="w-72 h-96 object-cover object-top block"
+              />
+
+              {/* Gradient fade at bottom */}
+              <div className="absolute inset-x-0 bottom-0 h-32"
+                style={{ background: 'linear-gradient(to top, #0A0A0F 0%, rgba(10,10,15,0.7) 50%, transparent 100%)' }} />
+
+              {/* Name tag at bottom */}
+              <div className="absolute bottom-0 inset-x-0 p-4">
+                <p className="font-semibold text-sm text-text leading-tight">Lloyd Joshua De Lara</p>
+                <p className="font-mono text-[10px] text-text-secondary mt-0.5">Full-Stack Developer</p>
+              </div>
+
+              {/* Available badge — top right */}
+              <div className="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-green/30 bg-green/10 backdrop-blur-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-green animate-pulse" />
+                <span className="font-mono text-[10px] text-green">open to work</span>
+              </div>
             </div>
-            <div className="p-5">
-              <SyntaxHighlight code={code} />
-            </div>
+
+            {/* Decorative accent corner dots */}
+            <div className="absolute -top-2 -left-2 w-4 h-4 rounded-full border-2 border-accent/40" />
+            <div className="absolute -bottom-2 -right-2 w-4 h-4 rounded-full border-2 border-accent/40" />
           </div>
         </FadeIn>
+
       </div>
     </section>
   )

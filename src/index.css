@@ -160,3 +160,9 @@ body {
   padding: 3px;
   border-radius: 50%;
 }
+
+/* Profile card wrapper */
+.profile-card-wrap {
+  position: relative;
+  display: inline-block;
+}
