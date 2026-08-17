@@ -28,10 +28,9 @@ const moreProjects = [
   },
   {
     name: "Arceo's Lugaw House", badge: 'Client Project',
-    desc: "Full-stack web presence built for Arceo's Sarap Lugaw House. A single-page application covering the menu, branch locations, gallery, testimonials, and contact — designed with a clean, professional aesthetic and optimized for mobile.",
-    stack: ['React', 'Node.js', 'Vite'],
+    desc: "A mobile Point of Sale (POS) application built for Arceo's Sarap Lugaw House. Features real-time cloud synchronization, role-based access for Admins and Cashiers, raw ingredient tracking decoupled from sales, and daily/monthly expense analytics.",
+    stack: ['Kotlin', 'Jetpack Compose', 'Firebase', 'MVVM'],
     src: 'https://github.com/Juicewaaa4/arceolugawhousemobile',
-    demo: 'https://arceolugawhouse.vercel.app',
   },
   {
     name: 'Automatic Smart Roof', badge: 'Client Project',
