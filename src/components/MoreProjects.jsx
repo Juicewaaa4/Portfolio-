@@ -21,7 +21,7 @@ const moreProjects = [
     demo: 'https://beready-ecln.onrender.com',
   },
   {
-    name: 'Richwell Portal', badge: 'Web Application',
+    name: 'Richwell Portal', badge: 'Contributor',
     desc: 'Student information system where registrars, cashiers, deans, and students each see role-specific dashboards. Led the frontend in React 19 with Vite, designed four distinct dashboard layouts in Tailwind, and managed the codebase through feature branches.',
     stack: ['React 19', 'Vite', 'Tailwind'],
     src: 'https://github.com/property360-2/richwell-potal',
