@@ -19,13 +19,13 @@ const featured = [
     demo: 'https://www.youtube.com/watch?v=pgnEPNRVDD0',
   },
   {
-    name: 'Billiard Management System', badge: 'OJT Project',
+    name: "Zoey's Billiard Management System", badge: 'Client Project',
     desc: 'Standalone operations system for billiard businesses. Handles multiple table types — regular, VIP, KTV, and Kubo rentals — with real-time session tracking, global timeout alarms, reservation scheduling, void management with audit trails, and Excel report generation for daily transactions and dead time analysis.',
     stack: ['PHP', 'MySQL', 'JavaScript', 'XAMPP'],
     src: 'https://github.com/Juicewaaa4/Billiard-Management-System',
   },
   {
-    name: "Zoey's Eatery POS", badge: 'OJT Project',
+    name: "Zoey's Eatery POS", badge: 'Client Project',
     desc: "Offline-first desktop POS and inventory system for eateries. Built around a dual-shift model — Day and Night shifts each maintain their own independent session, cashier assignments, and transaction records, then reconcile into a unified daily closing report.",
     details: [
       'Day / Night shift sessions with per-shift cashier login and independent transaction logs',
@@ -35,6 +35,18 @@ const featured = [
     ],
     stack: ['C#', '.NET 8', 'WinForms', 'SQLite'],
     src: 'https://github.com/Juicewaaa4/Zoey-s-Eatery-POS',
+  },
+  {
+    name: "Zoey's StreetFoods", badge: 'OJT Project',
+    desc: "A mobile Point of Sale (POS) application built for a street food business. Features real-time cloud synchronization, role-based access for Admins and Cashiers, and profit tracking to automatically compute net profit per item and total revenue.",
+    details: [
+      'Role-based access (Admin/Cashier) with secure Firebase Authentication',
+      'Real-time cloud sync and database management using Firebase Firestore',
+      'Profit tracking system that computes net profit from cost/puhunan per item',
+      'Modern, uncluttered UI built with Jetpack Compose Material 3',
+    ],
+    stack: ['Kotlin', 'Jetpack Compose', 'Firebase', 'MVVM'],
+    src: 'https://github.com/Juicewaaa4/Mobile-StreetFoods-POS',
   },
 ]
 
@@ -81,7 +93,7 @@ export default function Projects({ onViewMore }) {
           <p className="font-mono text-xs text-accent uppercase tracking-widest mb-2">Work</p>
           <h2 className="text-2xl md:text-3xl font-semibold mb-3 tracking-tight">Selected projects</h2>
           <p className="text-text-secondary text-sm max-w-lg mb-8">
-            Three applications I'm most proud of — a capstone ML system and two OJT production builds.
+            Four applications I'm most proud of — a capstone ML system, two client projects, and an OJT mobile app.
           </p>
         </FadeIn>
 
