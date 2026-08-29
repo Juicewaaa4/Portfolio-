@@ -9,32 +9,32 @@ const ArrowLeft = () => <svg className="w-4 h-4" fill="none" stroke="currentColo
 const moreProjects = [
   {
     name: 'RCI Attendance Monitoring', badge: 'Contributor',
-    desc: 'RFID-based attendance tracking system built on Laravel with Blade templates. Contributed to real-time check-in/out logging, role-based dashboards for admins and teachers, and auto-generated attendance reports. Deployed with Docker and Nixpacks.',
+    desc: 'RFID-based attendance tracking system built on Laravel with Blade templates. Contributed real-time check-in/out logging across 3 user roles (Admin, Teacher, Student), role-scoped dashboards, and auto-generated attendance reports exportable per period. Deployed with Docker via Nixpacks.',
     stack: ['Laravel', 'Blade', 'MySQL', 'Vite', 'Docker'],
     src: 'https://github.com/Juicewaaa4/rci-attendance-monitorting',
   },
   {
     name: 'BeReady', badge: 'Web Application',
-    desc: 'Django-based disaster awareness and preparedness web app for the Philippines. Provides localized safety articles by hazard type, emergency hotlines, and an AI chatbot that generates context-specific guidelines — making complex safety protocols accessible under stress.',
+    desc: 'Django-based disaster preparedness web app covering 5 major hazard categories — typhoon, earthquake, flood, landslide, and fire — specific to the Philippines. Provides region-localized safety articles, emergency hotlines, and an AI chatbot that generates context-specific protocols, reducing cognitive load when accessing safety information under stress.',
     stack: ['Django', 'Python', 'SQLite', 'AI Integration'],
     src: 'https://github.com/Juicewaaa4/BeReady',
     demo: 'https://beready-ecln.onrender.com',
   },
   {
     name: 'Richwell Portal', badge: 'Contributor',
-    desc: 'Student information system where registrars, cashiers, deans, and students each see role-specific dashboards. Led the frontend in React 19 with Vite, designed four distinct dashboard layouts in Tailwind, and managed the codebase through feature branches.',
+    desc: 'Student information system with 4 role-specific dashboards — Registrar, Cashier, Dean, and Student — each scoped to their operational domain. Led the full frontend in React 19 with Vite, designed all 4 dashboard layouts in Tailwind, and managed feature development through structured branch workflows.',
     stack: ['React 19', 'Vite', 'Tailwind'],
     src: 'https://github.com/property360-2/richwell-potal',
   },
   {
     name: "Arceo's Lugaw House", badge: 'Client Project',
-    desc: "A mobile Point of Sale (POS) application built for Arceo's Sarap Lugaw House. Features real-time cloud synchronization, role-based access for Admins and Cashiers, raw ingredient tracking decoupled from sales, and daily/monthly expense analytics.",
+    desc: "Cloud-synced mobile POS for a live lugawan business. Supports 2 access roles (Admin and Cashier), tracks raw ingredient inventory decoupled from sales to prevent unintended stock interference, and surfaces daily and monthly expense analytics to help the owner monitor margins over time.",
     stack: ['Kotlin', 'Jetpack Compose', 'Firebase', 'MVVM'],
     src: 'https://github.com/Juicewaaa4/arceolugawhousemobile',
   },
   {
     name: 'Automatic Smart Roof', badge: 'Client Project',
-    desc: 'Arduino-based retractable roof system that reacts autonomously to weather. Uses a rain sensor and LDR (light-dependent resistor) to close the roof during rainfall or at night and open it during sunny conditions — with LED status indicators for real-time feedback.',
+    desc: 'Arduino-based retractable roof system that responds autonomously to 2 environmental triggers — rainfall via a rain sensor and darkness via an LDR. Closes the roof when either condition is detected and opens it during clear daytime conditions, with LED status indicators providing real-time physical feedback.',
     details: [
       'Rain sensor triggers close at configurable sensitivity threshold',
       'LDR detects darkness to automatically retract for nighttime protection',

@@ -36,6 +36,11 @@ export default function Navbar() {
               {active === l && <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent rounded-full" />}
             </a>
           ))}
+          <a href="/De Lara Resume.pdf" target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-accent/40 text-accent text-xs font-mono font-semibold rounded-md hover:bg-accent hover:text-white transition-all duration-200">
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a1 1 0 001 1h16a1 1 0 001-1v-3" /></svg>
+            Resume
+          </a>
         </div>
         <button className="md:hidden flex flex-col gap-1 p-1" onClick={() => setOpen(!open)}
           aria-label="Toggle menu">
@@ -52,6 +57,10 @@ export default function Navbar() {
               {l.charAt(0).toUpperCase() + l.slice(1)}
             </a>
           ))}
+          <a href="/De Lara Resume.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}
+            className="font-mono text-xs text-accent font-semibold hover:underline transition-colors">
+            ↓ Resume
+          </a>
         </div>
       )}
     </nav>
