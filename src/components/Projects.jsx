@@ -59,7 +59,6 @@ function ProjectCard({ p, index = 0 }) {
   return (
     <FadeIn delay={index * 0.08}>
       <div className={`glass-card rounded-xl overflow-hidden ${p.featured ? 'ring-1 ring-accent/20' : ''}`}>
-        {p.featured && <div className="featured-ribbon">Featured</div>}
         <div className="h-24 md:h-32 bg-gradient-to-br from-accent/20 via-elevated to-base flex items-center justify-center border-b border-border px-6">
           <span className="font-mono text-white text-base font-semibold tracking-wide select-none text-center" style={{ textShadow: '0 0 20px rgba(99,102,241,0.6), 0 1px 3px rgba(0,0,0,0.8)' }}>{p.name}</span>
         </div>
