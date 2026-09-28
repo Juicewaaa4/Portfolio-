@@ -26,7 +26,7 @@ export default function Education() {
                 Senior High School
               </h3>
               <p className="text-text-secondary text-sm">Dampol 2nd National Highschool</p>
-              <p className="font-mono text-xs text-text-muted mt-1">2021 – 2022</p>
+              <p className="font-mono text-xs text-text-muted mt-1">2020 – 2022</p>
             </div>
           </FadeIn>
         </div>
